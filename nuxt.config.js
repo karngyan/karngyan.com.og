@@ -12,6 +12,39 @@ const createSitemapRoutes = async () => {
   return routes;
 }
 
+const constructFeedItem = (post, type, hostname) => {
+  const url = `${hostname}/${type}/${post.slug}`;
+  return {
+    title: `${type} • ${post.title}`,
+    id: url,
+    link: url,
+    description: post.description,
+    content: post.bodyPlainText
+  }
+}
+
+const create = async (feed) => {
+  const hostname = `https://karngyan.com`;
+  feed.options = {
+    title: `Blog & Projects | Gyan Prakash Karn`,
+    description: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.',
+    link: `${hostname}/feed.xml`
+  }
+  const { $content } = require('@nuxt/content')
+  const posts = await $content('articles').fetch();
+  for (const post of posts) {
+    const feedItem = await constructFeedItem(post, 'blog', hostname);
+    feed.addItem(feedItem);
+  }
+
+  const projects = await $content('projects').fetch();
+  for (const project of projects) {
+    const feedItem = await constructFeedItem(project, 'projects', hostname);
+    feed.addItem(feedItem);
+  }
+
+  return feed;
+}
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -91,9 +124,20 @@ export default {
     '@nuxt/content',
     '@nuxtjs/robots',
     'nuxt-i18n',
+    '@nuxtjs/feed',
     '@nuxtjs/pwa',
     '@nuxtjs/toast',
     '@nuxtjs/sitemap'
+  ],
+
+  feed: [
+    {
+      path: '/feed.xml', // The route to your feed.
+      create, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+      data: [] // Will be passed as 2nd argument to `create` function
+    }
   ],
 
   pwa: {
@@ -195,8 +239,8 @@ export default {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
+        document.bodyPlainText = document.text;
         const { text } = require('reading-time')(document.text)
-
         document.readingTime = text
       }
     }
