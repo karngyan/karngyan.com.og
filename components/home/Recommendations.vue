@@ -6,6 +6,70 @@
     </div>
     <section class="max-w-7xl mx-auto">
       <div data-aos="zoom-in" class="lg:grid lg:grid-cols-2 lg:gap-4 mb-4 space-y-4 lg:space-y-0 lg:items-start px-4">
+        <div class="relative h-full  bg-gray-900 rounded-lg shadow-lg text-base max-w-prose mx-auto lg:max-w-none">
+          <blockquote class="relative">
+            <div class="rounded-t-lg px-5 py-5 sm:px-10 sm:pt-10 sm:pb-8">
+              <div class="flex flex-row">
+                <a href="https://www.linkedin.com/in/varun-jain-582b0215/" target="_blank" rel="noreferrer">
+                  <cite class="flex items-center rounded-b-lg not-italic">
+                    <div class="flex-shrink-0 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded-full border border-hot-pink mr-4">
+                      <img class="w-8 h-8 rounded-full bg-indigo-300" src="../../assets/varun.jpeg" alt="Varun">
+                    </div>
+                    <span class="text-gray-400 font-semibold py-2">
+                    <strong class="text-gray-200 font-semibold">Varun Jain</strong>
+                    Founder, SendX & SendPost
+                  </span>
+                  </cite>
+                </a>
+              </div>
+              <div class="relative text-sm text-gray-300 font-medium mt-4">
+                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-800" fill="currentColor" viewBox="0 0 32 32">
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="relative">
+                  <p class="relative">Gyan interned with SendX and SendPost for around 6 months. He is a very strong full-stack engineer who can create pixel perfect frontend while being able to work on backend pieces sending millions of emails per day. He is a quick learner, a great team player and, has a very strong work ethic. You can rely on him that things will be done with utmost quality. He also has pretty good product instincts and can think from the user's perspective.
+</p>
+<br/>
+<p class="relative">
+During the internship, he grew tremendously and his impact was visible to everyone in the company. It was a great experience working and learning from him. I hope to work with him again in the future. If not, I will be sitting on the sidelines, cheering him and watching products he builds in the future.
+                </p></p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="relative text-base h-full bg-gray-900 rounded-lg shadow-lg max-w-prose mx-auto lg:max-w-none">
+          <blockquote class="relative">
+            <div class="rounded-t-lg px-5 py-5 sm:px-10 sm:pt-10 sm:pb-8">
+              <div class="flex flex-row">
+                <a href="https://www.linkedin.com/in/gkcs/" target="_blank" rel="noreferrer">
+                  <cite class="flex items-center rounded-b-lg not-italic">
+                    <div class="flex-shrink-0 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded-full border border-hot-pink mr-4">
+                      <img class="w-8 h-8 rounded-full bg-indigo-300" src="../../assets/gaurav.jpeg" alt="Guarav">
+                    </div>
+                    <span class="text-gray-400 font-semibold py-2">
+                    <strong class="text-gray-200 font-semibold">Gaurav Sen</strong>
+                    Founder, InterviewReady
+                  </span>
+                  </cite>
+                </a>
+              </div>
+              <div class="relative text-sm text-gray-300 font-medium mt-4">
+                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-800" fill="currentColor" viewBox="0 0 32 32">
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                </svg>
+                <p class="relative">
+                  <p class="relative">Karn is an extraordinarily talented, diligent and foresighted individual. He is gifted at building products from paper to code, and has a knack of finding efficient solutions to complex problems.
+<br/><br/>
+In my experience, I have rarely seen such a mixture of talent and passion put together. At InterviewReady, Karn exceeded our expectations.
+<br/><br/>
+If you are considering working with him: congratulations, you are going to have a great time!</p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+
+      <div data-aos="zoom-in" class="lg:grid lg:grid-cols-2 lg:gap-4 mb-4 space-y-4 lg:space-y-0 lg:items-start px-4">
         <div class="relative h-full bg-gray-900 rounded-lg shadow-lg text-base max-w-prose mx-auto lg:max-w-none">
           <blockquote class="relative">
             <div class="rounded-t-lg px-5 py-5 sm:px-10 sm:pt-10 sm:pb-8">
@@ -54,39 +118,6 @@
                 </svg>
                 <p class="relative">
                   <p class="relative">I've worked with Gyan at his time at SendX and it was an absolute pleasure to work with him he's one of the most driven and capable developers I've met, with knowledge throughout our techstack from the front end webapp to the entire backend, he has been a really fast learner and was able to scale up extremely quickly, plus he's a good sport who pretty much gave me an eye for design through his brief intro on figma which will probably remain with me forever.</p>
-              </div>
-            </div>
-          </blockquote>
-        </div>
-      </div>
-      <div data-aos="zoom-in" class="lg:grid lg:grid-cols-1 lg:gap-8 mb-4 lg:items-start px-4">
-        <div class="relative text-base max-w-prose mx-auto lg:max-w-none">
-          <blockquote class="relative bg-gray-900 rounded-lg shadow-lg">
-            <div class="rounded-t-lg px-5 py-5 sm:px-10 sm:pt-10 sm:pb-8">
-              <div class="flex flex-row">
-                <a href="https://www.linkedin.com/in/varun-jain-582b0215/" target="_blank" rel="noreferrer">
-                  <cite class="flex items-center rounded-b-lg not-italic">
-                    <div class="flex-shrink-0 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded-full border border-hot-pink mr-4">
-                      <img class="w-8 h-8 rounded-full bg-indigo-300" src="../../assets/varun.jpeg" alt="Varun">
-                    </div>
-                    <span class="text-gray-400 font-semibold py-2">
-                    <strong class="text-gray-200 font-semibold">Varun Jain</strong>
-                    Founder, SendX & SendPost
-                  </span>
-                  </cite>
-                </a>
-              </div>
-              <div class="relative text-sm text-gray-300 font-medium mt-4">
-                <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-gray-800" fill="currentColor" viewBox="0 0 32 32">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                </svg>
-                <p class="relative">
-                  <p class="relative">Gyan interned with SendX and SendPost for around 6 months. He is a very strong full-stack engineer who can create pixel perfect frontend while being able to work on backend pieces sending millions of emails per day. He is a quick learner, a great team player and, has a very strong work ethic. You can rely on him that things will be done with utmost quality. He also has pretty good product instincts and can think from the user's perspective.
-</p>
-<br/>
-<p class="relative">
-During the internship, he grew tremendously and his impact was visible to everyone in the company. It was a great experience working and learning from him. I hope to work with him again in the future. If not, I will be sitting on the sidelines, cheering him and watching products he builds in the future.
-                </p></p>
               </div>
             </div>
           </blockquote>
