@@ -4,7 +4,7 @@
       <div class="bg-gray-900 py-3 px-6 flex justify-between items-center">
         <h1 class="text-lg flex flex-row font-semibold text-gray-200"><span class="pr-1">{{ $t('nav.resume') }}</span>
           - <span class="pl-1 hidden md:block">{{ $store.state.name }}</span></h1>
-        <a target="_blank" rel="noreferrer" :href="$store.state.resume.pdfUrlDark" :download="`${$store.state.name}.pdf`"
+        <a target="_blank" rel="noreferrer" :href="$store.state.resume.pdfUrl" :download="`${$store.state.name}.pdf`"
                 class="inline-flex text-indigo-500 hover:text-indigo-600 items-center px-2 py-1 border
                  border-transparent shadow-sm text-sm font-medium
                  rounded-md btn-color-style">
