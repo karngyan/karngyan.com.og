@@ -108,8 +108,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    ['@layer0/nuxt/module', { layer0SourceMaps: false }],
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxtjs/axios',
+    '@nuxtjs/firebase',
+    '@nuxtjs/robots',
+    'nuxt-i18n',
+    '@nuxtjs/feed',
+    '@nuxtjs/toast',
+    '@nuxtjs/sitemap'
   ],
 
   googleAnalytics: {
@@ -119,15 +127,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/firebase',
     '@nuxt/content',
-    '@nuxtjs/robots',
-    'nuxt-i18n',
-    '@nuxtjs/feed',
-    '@nuxtjs/pwa',
-    '@nuxtjs/toast',
-    '@nuxtjs/sitemap'
   ],
 
   feed: [
@@ -139,12 +139,6 @@ export default {
       data: [] // Will be passed as 2nd argument to `create` function
     }
   ],
-
-  pwa: {
-    icon: {
-      fileName: 'favicon.ico'
-    }
-  },
 
   firebase: {
     config: {

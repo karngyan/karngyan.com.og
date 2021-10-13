@@ -94,3 +94,5 @@ static/sw.js
 .awspublish-karngyan.com
 
 .env
+# Layer0 generated build directory
+.layer0
