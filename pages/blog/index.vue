@@ -16,10 +16,11 @@
         </button>
       </nav>
     </div>
-
-    <div data-aos="zoom-in" class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3">
-      <BlogCard v-for="article in articlesByCategories" :key="article.slug" :article="article" />
-    </div>
+    <client-only>
+      <div data-aos="zoom-in" class="mt-5 gap-4 mx-4 grid max-w-none lg:grid-cols-3">
+          <BlogCard v-for="article in articlesByCategories" :key="article.slug" :article="article" />
+      </div>
+    </client-only>
   </div>
 </template>
 
@@ -45,7 +46,7 @@ export default {
   },
   head() {
     return {
-      title: 'blog -- Karn | Friendly Neighborhood Developer'
+      title: 'blog -- karn | friendly neighborhood developer'
     }
   },
   async asyncData({ $content }) {

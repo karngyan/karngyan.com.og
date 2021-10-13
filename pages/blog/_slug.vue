@@ -42,20 +42,24 @@
             </header>
 
             <div class="prose dark:prose-dark break-words my-4 prose-sm max-w-4xl mx-auto">
-              <nuxt-content :document="article" />
+              <client-only>
+                <nuxt-content :document="article" />
+              </client-only>
             </div>
           </div>
 
         </div>
-        <div class="my-6">
-          <Like :slug="article.slug" />
-        </div>
-        <div id="comments" class="border-t border-gray-700 border-dashed mt-6 py-5">
-          <CommentInput :slug="article.slug"/>
-        </div>
-        <div class="space-y-4 max-w-7xl">
-          <Comment v-for="(comment, index) in comments" :comment="comment"  :key="index" />
-        </div>
+        <client-only>
+          <div class="my-6">
+            <Like :slug="article.slug" />
+          </div>
+          <div id="comments" class="border-t border-gray-700 border-dashed mt-6 py-5">
+            <CommentInput :slug="article.slug"/>
+          </div>
+          <div class="space-y-4 max-w-7xl">
+            <Comment v-for="(comment, index) in comments" :comment="comment"  :key="index" />
+          </div>
+        </client-only>
       </article>
     </div>
   </div>
@@ -98,7 +102,7 @@ export default {
   },
   head() {
     return {
-      title: this.article.title + ' | Blog -- Karn | Friendly Neighborhood Developer',
+      title: this.article.title + ' | blog -- karn | friendly neighborhood developer',
       meta: [
         { hid: 'description', name: 'description', content: this.article.description },
         // Open Graph

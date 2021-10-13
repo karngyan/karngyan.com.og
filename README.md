@@ -11,6 +11,12 @@ $ yarn install
 # serve with hot reload at localhost:3000
 $ yarn dev
 
+# Build for production
+$ yarn build 
+
+# Serve
+$ yarn serve
+
 # generate static project
 $ yarn generate
 ```

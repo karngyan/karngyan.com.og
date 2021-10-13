@@ -9053,19 +9053,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pdfjs-dist@2.5.207, pdfjs-dist@^2.4.456:
+pdfjs-dist@2.5.207:
   version "2.5.207"
   resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.5.207.tgz#b5e8c19627be64269cd3fb6df3eaaf45ddffe7b6"
   integrity sha512-xGDUhnCYPfHy+unMXCLCJtlpZaaZ17Ew3WIL0tnSgKFUZXHAPD49GO9xScyszSsQMoutNDgRb+rfBXIaX/lJbw==
-
-pdfvuer@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/pdfvuer/-/pdfvuer-1.8.3.tgz#9cc5e62a57d2bb508c1c95bb4572cdfca2a9e62e"
-  integrity sha512-9YKocSRVVR8l/fAjcXqt6rEc3eenY9qc/0TsqSB3BCpin8Dd6suwVvnrbCJLWZ8Uvx+5y7kFrY+GjpTR2N3gJw==
-  dependencies:
-    pdfjs-dist "^2.4.456"
-    raw-loader "^0.5.1"
-    vue-resize-sensor "^2.0.0"
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.2.3"
@@ -10190,11 +10181,6 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
-
-raw-loader@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
-  integrity sha1-DD0L6u2KAclm2Xh793goElKpeao=
 
 rc9@^1.2.0:
   version "1.2.0"
@@ -12319,11 +12305,6 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
-
-vue-resize-sensor@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/vue-resize-sensor/-/vue-resize-sensor-2.0.0.tgz#3a587fd6802e1688709cf2c5aadae7a0075952bf"
-  integrity sha512-W+y2EAI/BxS4Vlcca9scQv8ifeBFck56DRtSwWJ2H4Cw1GLNUYxiZxUHHkuzuI5JPW/cYtL1bPO5xPyEXx4LmQ==
 
 vue-router@^3.5.1:
   version "3.5.1"
