@@ -110,6 +110,14 @@ export default {
   buildModules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
+    '@nuxtjs/robots',
+    'nuxt-i18n',
+    '@nuxtjs/feed',
+    '@nuxtjs/pwa',
+    '@nuxtjs/toast',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/axios',
+    '@nuxtjs/firebase',
   ],
 
   googleAnalytics: {
@@ -119,15 +127,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/firebase',
     '@nuxt/content',
-    '@nuxtjs/robots',
-    'nuxt-i18n',
-    '@nuxtjs/feed',
-    '@nuxtjs/pwa',
-    '@nuxtjs/toast',
-    '@nuxtjs/sitemap'
   ],
 
   feed: [
