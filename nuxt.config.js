@@ -117,7 +117,6 @@ export default {
     '@nuxtjs/toast',
     '@nuxtjs/sitemap',
     '@nuxtjs/axios',
-    '@nuxtjs/firebase',
   ],
 
   googleAnalytics: {
@@ -128,6 +127,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
+    '@nuxtjs/firebase',
   ],
 
   feed: [
