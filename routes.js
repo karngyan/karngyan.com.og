@@ -2,9 +2,11 @@
 // You should commit this file to source control.
 
 const { Router } = require('@layer0/core/router')
-const { nuxtRoutes, renderNuxtPage } = require('@layer0/nuxt')
+const { nuxtRoutes } = require('@layer0/nuxt')
 
 module.exports = new Router()
+  .get('/blog/:slug?', ({ renderWithApp }) => { renderWithApp() })
+  .get('/projects/:slug?', ({ renderWithApp }) => { renderWithApp() })
   .match('/service-worker.js', ({ serviceWorker }) => {
     serviceWorker('.nuxt/dist/client/service-worker.js')
   })

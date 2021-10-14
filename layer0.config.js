@@ -9,5 +9,7 @@ module.exports = {
   connector: '@layer0/nuxt',
   includeFiles: {
     'content/**/*': true,
+    ".nuxt/content/**/*": true,
+    "./.nuxt/dist/sitemap-routes.json": true,
   },
 }
