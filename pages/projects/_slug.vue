@@ -109,7 +109,7 @@ export default {
       toastOptions: { duration: 2000, theme: 'bubble' }
     }
   },
-  async fetch() {
+  async created() {
     try {
       await this.$store.dispatch('fetchComments', {slug: this.project.slug})
     } catch (e) {

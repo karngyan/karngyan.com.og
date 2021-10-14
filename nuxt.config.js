@@ -165,7 +165,7 @@ export default {
           onAuthStateChangedAction: 'authAction',
           subscribeManually: false
         },
-        ssr: false,
+        ssr: true,
       },
       firestore: true
     }

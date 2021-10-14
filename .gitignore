@@ -84,6 +84,7 @@ dist
 sw.*
 
 static/sw.js
+static/firebase-auth-sw.js
 
 # macOS
 .DS_Store
