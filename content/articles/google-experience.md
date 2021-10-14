@@ -26,13 +26,13 @@ It's July end of 2019, I have just started my third year at BIT Mesra. Multiple 
 So, it's 26th July I am taking a shower listening to Diljit's songs (thanks to my roomie) and a mail pops up.
 
 <div>
-  <img class="center" src="/images/google-rejection/invite-subject.png" alt="Mail Subject" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/invite-subject.png" alt="Mail Subject" width="70%"/>
 </div>
 
 Oh, wait! You don't take your phone to the shower? Seriously, it's 2020. Alright, the subject looked weird, I thought it must be one of those Google Career Page's Push Notification. And then when I opened it with my moist hands. I was shocked, you could have knocked me down with a feather! It felt like all those missed classes were not for anything.
 
 <div>
-  <img class="center" src="/images/google-rejection/invite-mail.png" alt="Mail Content" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/invite-mail.png" alt="Mail Content" width="70%"/>
 </div>
 
 I called up Puneet (the guy who inspires me to code {you need to find your Puneet if you want to code}), he also participates in Kickstart regularly. There was this Round B in 2019 where we both performed pretty well, my rank was 109 and I remember he was in the 50s or something. Well he got a similar mail. We both replied affirmatively to our recruiters in about 20 minutes after we had received the mail.
@@ -116,13 +116,13 @@ He cheered me up! Then we had a chat about Google's culture and what he's been u
 He wished me good luck and that was it. I was pretty happy with how this interview went and I think it was the reason for this:
 
 <div>
-  <img class="center" src="/images/google-rejection/hc-subject.png" alt="Mail Subject" width="50%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/hc-subject.png" alt="Mail Subject" width="50%"/>
 </div>
 
 <hr>
 
 <div>
-  <img class="center" src="/images/google-rejection/positive-hc.png" alt="Positive HC" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/positive-hc.png" alt="Positive HC" width="70%"/>
 </div>
 
 Now it was just waiting and googling a lot about Google's hiring committee.
@@ -140,13 +140,13 @@ I went to our college laboratory for the online coding round which was scheduled
 I cleared the online round and this is me waiting for my interview:
 
 <div>
-  <img class="center" src="/images/google-rejection/fever.png" alt="Fever" width="40%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/fever.png" alt="Fever" width="40%"/>
 </div>
 
 Well, let's get back to Google again. This happened after a lot of emails from me asking for my status.
 
 <div>
-  <img class="center" src="/images/google-rejection/again.png" alt="Interview Again" width="90%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/again.png" alt="Interview Again" width="90%"/>
 </div>
 
 Ahhhh!! Not another interview. And this was so close to my exams. See the thing is when I try to do things right with my college curriculum, the universe sends me towards another black hole. And I end up losing marks.
@@ -156,7 +156,7 @@ I prepared for another interview. Honestly was not confident enough, but still w
 I did not expect this but may be I had a vibe this was going to happen:
 
 <div>
-  <img class="center" src="/images/google-rejection/rejected.png" alt="Interview Again" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/google-rejection/rejected.png" alt="Interview Again" width="70%"/>
 </div>
 
 <div class="breaker"></div>

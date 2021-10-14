@@ -36,7 +36,7 @@ I guess I am a fan of tables. Also I thought this will be a quick write up since
 
 Alright! Let's talk about the type of situation where you might want to use **sparse tables**. As I said, it's all about doing efficient range queries on static arrays. So, a typical use case is when you're dealing with say an integer array that has **immutable** data i.e. does not change over the course of time.
 
-![Integer Array](/images/sparse-tables/int-array.png)
+![Integer Array](https://cdn.karngyan.com/images/sparse-tables/int-array.png)
 
 <figcaption class="caption">Integer Array</figcaption> <br/>
 
@@ -49,13 +49,13 @@ I'd like to give you a brief intuition on how a sparse table works at a high lev
 So, if you think about any positive integer, you know that it can easily be represented as the sum of powers of 2, given by it's binary representation. For example:
 
 <div>
-  <img class="center" src="/images/sparse-tables/19-binary.png" alt="19 in binary" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/19-binary.png" alt="19 in binary" width="70%"/>
 </div>
 
 Similary we can break down an interval [l, r] with a left and a right end point into ranges of lengths that are powers of 2. For example:
 
 <div>
-  <img class="center" src="/images/sparse-tables/range-break.png" alt="Range Break"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/range-break.png" alt="Range Break"/>
 </div>
 
 Here, [5, 17] is broken down into three ranges of length 8, 4, and 1. Now imagine if we could precompute the range query answer (i.e min, max, sum ...) for all these intervals and combine them. Well that's the direction we are headed in so we can answer numerous types of range queries with a sparse table. However all range query functions need to meet certain prerequisites in order to be compatible with the types of aggregation and combination operations that we want to do while building the sparse table and also while performing range queries.
@@ -97,7 +97,7 @@ f(f(a, b), f(b, c)) = f(a, f(b, c)) for all valid a, b, c
 Well if it's still not clear let's see an example:
 
 <div>
-  <img class="center" src="/images/sparse-tables/overlap-agnostic.png" alt="Overlap Friendly" width="70%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/overlap-agnostic.png" alt="Overlap Friendly" width="70%"/>
 </div>
 
 Consider this array and a summation function f(x, y) which just adds x and y. Unfortunately, this is not overlap friendly and I can easily show you why. Here I have already computed the sum of three arbitrary ranges denoted r1, r2 and r3. What we're trying to test is whether our function is agnostic to the middle interval r2.
@@ -144,7 +144,7 @@ The central idea behind a sparse table is to pre compute the range query answers
 Let **N** be size of the input values array, and let <strong>2<sup>P</sup></strong> be the largest power of 2 that fits in the length of the values array.
 
 <div>
-  <img class="center" src="/images/sparse-tables/table-1.png" alt="Table Construction Array" width="100%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/table-1.png" alt="Table Construction Array" width="100%"/>
 </div>
 
 ```js
@@ -175,7 +175,7 @@ The way we'll build the table is by reusing already computed range values of pre
 Suppose, we want to know the value of the pink cell (3, 2). To compute its value we'll take the minimum of both the orange cells, which represent intervals of length 4, which combined together cover the same range as the pink cell would. In turn the orange cells are computed from the green cells, which represent intervals of size 2. And those greens are based on blue cells. So the pink cell has the minimum value covered by all the blue cells.
 
 <div>
-  <img class="center" src="/images/sparse-tables/sub-table.png" alt="Table Construction Example" width="100%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/sub-table.png" alt="Table Construction Example" width="100%"/>
 </div>
 <figcaption class="caption">Calculation of value in cell (3, 2)</figcaption><br/>
 
@@ -243,7 +243,7 @@ Consider the input array: [1, 2, -3, 2, 4, -1, 5]
 Suppose, we want to find the **product** of all the elements between [0, 6] using a sparse table. First we would construct a table like we did before:
 
 <div>
-  <img class="center" src="/images/sparse-tables/prod-table.png" alt="Table Construction Example" width="60%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/prod-table.png" alt="Table Construction Example" width="60%"/>
 </div>
 
 Let's break it down into ranges of size of powers of 2: <strong>[0, 2<sup>2</sup>) U [4, 4 + 2<sup>1</sup>) U [6, 6 + 2<sup>0</sup>)</strong>
@@ -257,7 +257,7 @@ And then we lookup the value of each interval in the table and take the product 
 ```
 
 <div>
-  <img class="center" src="/images/sparse-tables/prod-table-2.png" alt="Table Construction Example" width="60%"/>
+  <img class="center" src="https://cdn.karngyan.com/images/sparse-tables/prod-table-2.png" alt="Table Construction Example" width="60%"/>
 </div>
 
 <div class="breaker"></div>

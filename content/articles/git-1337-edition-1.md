@@ -42,7 +42,7 @@ Alright! What is Git? We all know that it's a distributed version control system
 <span class="evidence">Git was initially a toolkit for a version control system rather than a full user-friendly VCS, it has several subcommands that do low-level work. These commands are generally referred to as Git’s “**plumbing**” commands, while the more user-friendly commands are called “**porcelain**” commands. Get it? </span>
 
 At it's core git is like a **hash-table**[^3], where the **Value** is the **Data** and the **Key** is the **Hash of the Data**. [^1]
-<img class="image" src="/images/git-leet-edition/key-data.png" alt="Key and Data" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/key-data.png" alt="Key and Data" class="center">
 <figcaption class="caption">You can use the key to retrieve the content (Terrible drawing by my mouse)</figcaption>
 
 ### The Key - SHA1
@@ -53,7 +53,7 @@ At it's core git is like a **hash-table**[^3], where the **Value** is the **Data
 
 So you look at git log, you see lots of 40 digit hexadecimal, those are called SHA1s.
 
-<img class="image" src="/images/git-leet-edition/git-log.png" alt="Git Log" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/git-log.png" alt="Git Log" class="center">
 <figcaption class="caption">git log</figcaption>
 
 This type of system is also called a Content Addressable Storage (CAS) System.
@@ -62,7 +62,7 @@ This type of system is also called a Content Addressable Storage (CAS) System.
 ### The Value - BLOB
 The most basic git object is called a blob (Binary Large OBject). Git stores the compressed data in a blob, along with the following metadata (data about data) in the header:
 
-<img class="image" src="/images/git-leet-edition/blob.png" alt="Blob" class="center" width="50%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/blob.png" alt="Blob" class="center" width="50%">
 <figcaption class="caption">git blob</figcaption>
 
 - the identifier **blob** (saying hey this is a blob)
@@ -105,12 +105,12 @@ We did store the content in a blob but we don't know where that file was and wha
     - *filename* or directory name of the thing that it's pointing to
     - and it stores the mode (is the file executable, or has symbolic links .. etc)
 
-<img class="image" src="/images/git-leet-edition/tree2.png" alt="Blob" class="center" width="50%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/tree2.png" alt="Blob" class="center" width="50%">
 <figcaption class="caption">It's a directed graph</figcaption>
 
 ### The Tree
 
-<img class="image" src="/images/git-leet-edition/tree.png" alt="Tree" class="center" width="50%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/tree.png" alt="Tree" class="center" width="50%">
 
 ```bash
 .
@@ -142,7 +142,7 @@ Directory Structure:
 
 The first blob points to **test.txt**. And we have another tree that points to **temp** (tree), and in temp, we have another file **test-copy.txt** (whose contents are the same as of test.txt), which is a blob with the same SHA1, as the content is same. 
 
-<img class="image" src="/images/git-leet-edition/identical-content.png" alt="Identical Content Tree" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/identical-content.png" alt="Identical Content Tree" class="center">
 <figcaption class="caption"></figcaption>
 
 And this is one of the most critical ideas about git. This is how git saves a ton of space, on your hard drive when storing full repositories. And this is why switching branches is so fast as well.
@@ -155,7 +155,7 @@ Packfiles are generated when you have too many objects, during garbage collectio
 
 But now you have an idea of the compressing deltas message when you push to remote.
 
-<img class="image" src="/images/git-leet-edition/git-push.png" alt="Git Push" class="center" width="70%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/git-push.png" alt="Git Push" class="center" width="70%">
 <figcaption class="caption">git push</figcaption>
 
 ### Git Commits
@@ -167,10 +167,10 @@ Commit Object: A commit points to a tree and contains metadata:
 
 The SHA1 of this commit is the hash of all this information. So a commit looks something like this: 
 
-<img class="image" src="/images/git-leet-edition/commit.png" alt="Commit" class="center" width="40%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/commit.png" alt="Commit" class="center" width="40%">
 
 These commits points to trees. And that tree points to other trees and blobs and so on.
-<img class="image" src="/images/git-leet-edition/git-commit-tree.png" alt="Commit Graph" class="center" width="80%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/git-commit-tree.png" alt="Commit Graph" class="center" width="80%">
 
 
 Assuming **a41cab** is the first commit in the repository, this commit won't have a parent. The second commit, i.e. the green circle above it, is pointing to the first commit as its parent. So a tree is essentially a snapshot of the repository which points at files and directories.
@@ -348,7 +348,7 @@ Although if you're interested you can also use **git stash -p**, similar to **gi
 
 A branch is just a pointer to a particular commit. The pointer of the current branch changes as new commits is made.
 
-<img class="image" src="/images/git-leet-edition/branch.png" alt="Branch" class="center" width="40%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/branch.png" alt="Branch" class="center" width="40%">
 <figcaption class="caption">branch</figcaption>
 
 You can learn more about git branching with really cool visualization from **Learn Git Branching**[^2].
@@ -359,7 +359,7 @@ You can learn more about git branching with really cool visualization from **Lea
 
 **Head** is how git knows what branch you're currently on, and what the next parent will be. It's a pointer that usually points at the **name** of the current branch. But, it can point at a commit too (detached HEAD). 
 
-<img class="image" src="/images/git-leet-edition/head.png" alt="HEAD" class="center" width="70%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/head.png" alt="HEAD" class="center" width="70%">
 <figcaption class="caption">HEAD</figcaption>
 
 HEAD moves when you make a commit in the currently active branch and when you checkout a new branch.
@@ -371,7 +371,7 @@ These are just a simple pointer to a commit. When you create a tag with no argum
 ```bash
 ❯ git tag my-first-tag
 ````
-<img class="image" src="/images/git-leet-edition/tag.png" alt="Tag" class="center" width="90%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/tag.png" alt="Tag" class="center" width="90%">
 <figcaption class="caption">Simple Lightweight Tag</figcaption>
 
 #### Annotated Tags: git tag -a
@@ -415,7 +415,7 @@ git show <tag-name> # look at the tag
 This is probably a scary message and many of us have been here. I feel it's like a rite of passage in the learning of git. Let's see how this state arises: Sometimes you want to **checkout** a specific commit (or tag) instead of a branch, git will simply move the HEAD pointer to that commit and it'll point to the next SHA. This state is a detached state.
 Now suppose, you have checked out a commit (via a git checkout < commit-id >):
 
-<img class="image" src="/images/git-leet-edition/headless.png" alt="headless" class="center" width="70%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/headless.png" alt="headless" class="center" width="70%">
 <figcaption class="caption">headless state</figcaption>
 
 Git tells you that you're in a detached HEAD state and any commits you make here and do not do something about it (i.e. create a new branch out of it) consider them lost. There are ways of getting them back and we'll talk about git disaster recovery soon, but if you don't do anything with them, poof.  
@@ -428,7 +428,7 @@ There are a few things we can do to save our work in a detached state.
     - So if you just point it to the last commit, history is preserved automatically.
 
 **Okay, let's make a commit. Hehe!**<br><br>
-<img class="image" src="/images/git-leet-edition/danglingcommit.png" alt="dangcommit" class="center" width="50%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/danglingcommit.png" alt="dangcommit" class="center" width="50%">
 <figcaption class="caption">commit in headless state</figcaption>
 
 These commits are actually called **dangling commits.** <br> <br>
@@ -448,18 +448,18 @@ You can think of merge commits as a marker as to when a feature branch got merge
 If you have ever merged two branches, you must have come across a term called fast-forward. Fast-forwarding happens when there is a clear path between the tip of the current branch to the tip of the target branch. For example: Hereafter we branched out feature, there were no more commits to master.
 
 
-<img class="image" src="/images/git-leet-edition/fast-forward.png" alt="clear path" class="center" width="60%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/fast-forward.png" alt="clear path" class="center" width="60%">
 
 During a fast forward commit, we add the new commits on top of the master branch and we just move the master pointer. In this case, we did not have to make a merge commit. Git knew how to move that pointer automatically.
 
-<img class="image" src="/images/git-leet-edition/fast-forward-2.png" alt="fast-forward" class="center" width="60%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/fast-forward-2.png" alt="fast-forward" class="center" width="60%">
 
 The problem with fast-forward is, we can lose track of a feature that was merged back into master. As when you're working on a feature and you merge it back into master, you'd like a clear delineator of the work that was done in that branch. Otherwise, we might have trouble finding out what feature caused the bug, 'cause these commits are just linear.
 
 So in order to avoid this, use
 - **git merge --no-ff**
 - this will force a merge commit even when one isn't necessary.
-<img class="image" src="/images/git-leet-edition/no-ff.png" alt="force-merge-commit" class="center" width="75%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/no-ff.png" alt="force-merge-commit" class="center" width="75%">
 
 ---
 
@@ -555,7 +555,7 @@ This confuses people all the time, even I google it sometimes.
 
 Let's understand these better with an example.
 
-<img class="image" src="/images/git-leet-edition/ref-commit.png" alt="ref-commit" class="center" width="60%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/ref-commit.png" alt="ref-commit" class="center" width="60%">
 <figcaption class="caption">consider this state of commits</figcaption>
 
 Both commit nodes B and C are parents of commit node A. Parent commits are ordered left to right. And A is the latest commit. (Merge commit of B & C)

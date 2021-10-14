@@ -195,7 +195,7 @@ We can pull in all the latest changes from master, and apply our commits on top 
 
 Lets consider this simple scenario:
 
-<img class="image" src="/images/git-leet-edition/rebase-1.png" alt="Rebase One" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/rebase-1.png" alt="Rebase One" class="center">
 <figcaption class="caption">Before Rebase</figcaption>
 
 I was working on the feature-dark-mode branch and at the same time, some developer added a commit to master. Currently HEAD is on feature-dark-mode.
@@ -205,14 +205,14 @@ Let's run
 ```bash
 git rebase master
 ```
-<img class="image" src="/images/git-leet-edition/rebase-2.png" alt="Rebase Two" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/rebase-2.png" alt="Rebase Two" class="center">
 <figcaption class="caption">After Rebase</figcaption>
 
 It created a new commit, actually a copy of the commit on the feature-dark-mode branch, and that branch is up to date with the latest commit on master. This makes resolving merge conflicts much easier. And people should rebase pretty frequently. It makes history a lot neater and cleaner.
 
 Let's have a look at a comparison between a rebase and a merge.
 
-<img class="image" src="/images/git-leet-edition/mergevrebase.png" alt="Rebase Vs Merge" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/mergevrebase.png" alt="Rebase Vs Merge" class="center">
 <figcaption class="caption">Rebase vs Merge</figcaption>
 
 You can see a merge creates a merge commit with two-parent pointers (and the hard work of solving a merge conflict with the master) whereas rebase creates a simple copy. But the hype and power of rebasing come from interactive rebasing. 
@@ -307,7 +307,7 @@ Distributed version control, before git, older systems like SVN, CVS had one cen
 
 Here's a comparison over distributed and central version control system.
 
-<img class="image" src="/images/git-leet-edition/dvcs-cvs.png" alt="https://github.com/logos" class="center">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/dvcs-cvs.png" alt="https://github.com/logos" class="center">
 
 There is an interesting story about Microsoft. So MS Windows was on one git repo, but because the codebase was so old and so huge they started running into problems. So unless you're planning on writing the next windows, the way Git works now is probably just fine. 
 
@@ -362,7 +362,7 @@ Now you can pull down changes that get added to the original repository after yo
 ### Github Workflows
 
 The most common workflow, is the triangular workflow. 
-<img class="image" src="/images/git-leet-edition/triworkflow.png" alt="Triangular Workflow" class="center" width="70%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/triworkflow.png" alt="Triangular Workflow" class="center" width="70%">
 <figcaption class="caption">Triangular Workflow</figcaption>
 
 #### Tracking Branches
@@ -445,7 +445,7 @@ Millions of people use GitHub day to day, theses shortcuts will help you navigat
 
 - Press '?' on any <ins>github.com</ins> page for a list of shortcuts.
 
-<img class="image" src="/images/git-leet-edition/github-shortcut.gif" alt="Github Shortcuts" class="center" width="90%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/github-shortcut.gif" alt="Github Shortcuts" class="center" width="90%">
 <figcaption class="caption">Some shortcuts</figcaption>
 
 ---
@@ -458,7 +458,7 @@ So if you're a person who merges smaller commits frequently instead of one big m
 
 There are caveats like, CI can only work well when there are tests that ensure that new commits did not "break the build". It's also possible to perform a deploy at the end of the CI build!
 
-<img class="image" src="/images/git-leet-edition/ci.png" alt="Continuous Integration" class="center" width="90%">
+<img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/ci.png" alt="Continuous Integration" class="center" width="90%">
 <figcaption class="caption">Continuous Integration</figcaption>
 
 #### Travis CI (Integrates well with GitHub)
@@ -482,7 +482,7 @@ Display Build Status of your project:
 Exempli Gratia: 
 
 <a href="https://github.com/karngyan/karngyan.github.io/blob/master/README.md" target="_blank" rel="noreferrer">
-    <img class="image" src="/images/git-leet-edition/travis-status.png" alt="Continuous Integration" class="center" width="40%">
+    <img class="image" src="https://cdn.karngyan.com/images/git-leet-edition/travis-status.png" alt="Continuous Integration" class="center" width="40%">
 </a>
 <figcaption class="caption">Travis Status</figcaption>
 

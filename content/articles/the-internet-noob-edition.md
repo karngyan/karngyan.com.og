@@ -77,7 +77,7 @@ Time to do an exercise, let's try **ping**.
 Ping is just a really short request. It just says hey, hey, hey, that's all it does. So, let's go in ping karngyan.com into your terminal.
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image" src="/images/the-internet-noob-edition/ping-karngyan.png" alt="ping karngyan.com">
+        <img class="image" src="https://cdn.karngyan.com/images/the-internet-noob-edition/ping-karngyan.png" alt="ping karngyan.com">
 			 <figcaption class="caption">ping karngyan.com (To kill, we just Ctrl+C)</figcaption>
     </div>
 		<div class="toright">
@@ -96,7 +96,7 @@ So, all it does is it maps domain names to IP addresses. And we need them becaus
 
 <div class="side-by-side">
     <div class="toright">
-        <img class="image" src="/images/the-internet-noob-edition/domain.png" alt="Domain">
+        <img class="image" src="https://cdn.karngyan.com/images/the-internet-noob-edition/domain.png" alt="Domain">
 			 <figcaption class="caption">Domains</figcaption>
     </div>
 		<div class="toleft">
@@ -136,7 +136,7 @@ $ man traceroute #Traceroute manual
 $ traceroute google.com
 ```
 
-![Traceroute Google.com](/images/the-internet-noob-edition/traceroute.png)
+![Traceroute Google.com](https://cdn.karngyan.com/images/the-internet-noob-edition/traceroute.png)
 <figcaption>traceroute google.com</figcaption>
 
 Instead of ping, which hits a server that replies back and says hey, I’m alive, Traceroute gives you a map of every single hop along that point. Traceroute gives you a map of every single hop along that point. Remember when I told you Internet is built on trusts in servers and nodes and switches. That's what we're doing, we're trying to reach **google.com** at **172.217.166.238** and we're hitting every server along the way.
