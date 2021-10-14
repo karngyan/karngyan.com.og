@@ -53,6 +53,8 @@ export default {
   // // Target: https://go.nuxtjs.dev/config-target
   // target: 'static',
 
+  modern: true,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Karn | Friendly Neighborhood Developer',
@@ -216,7 +218,9 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     splitChunks: {
-      layout: true
+      layout: true,
+      pages: true,
+      commons: true,
     },
   },
 
