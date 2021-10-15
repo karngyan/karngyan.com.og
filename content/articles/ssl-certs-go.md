@@ -32,11 +32,12 @@ Our backend is entirely in Go. So a golang solution that integrates well with ou
 
 - a cron that'd check for expired certificates and renew them 30 days (ideal time) before their expiry.
 - write a lua script at the load balancer layer to auto generate ssl certificates.
+- use a third party SaaS like [ZeroSSL](https://zerossl.com) to handle all our certs.
 - implement acme v2 protocol with our golang servers, which also extends a feature at SendPost, where users can add a custom track domain.
 
 > [ACME](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment) v1 did not support wildcard domains.
 
-Obvious choice, option three. It was time to start researching on existing libraries. I was aware of `caddyserver` and had been playing with it for a while. I knew they provided TLS certificates on the fly. It was probably a good time to reverse engineer that.
+Obvious developer choice, option four. It was time to start researching on existing libraries. I was aware of `caddyserver` and had been playing with it for a while. I knew they provided TLS certificates on the fly. It was probably a good time to reverse engineer that.
 
 I ended up on a few libraries but probably the best one for us was: [certmagic](https://github.com/caddyserver/certmagic) by caddyserver.
 
