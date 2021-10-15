@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-up" class="max-w-7xl px-4 mx-auto py-12 border-l border-r border-dashed border-gray-700">
+  <div class="max-w-7xl px-4 mx-auto py-12 border-l border-r border-dashed border-gray-700">
     <div class="shadow-md max-w-5xl mx-auto bg-gray-700 overflow-hidden rounded-lg divide-gray-800">
       <div class="bg-gray-900 py-3 px-6 flex justify-between items-center">
         <h1 class="text-lg flex flex-row font-semibold text-gray-200"><span class="pr-1">{{ $t('nav.resume') }}</span>

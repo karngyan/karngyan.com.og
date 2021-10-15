@@ -53,6 +53,8 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  modern: true,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Karn | Friendly Neighborhood Developer',
@@ -204,7 +206,7 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    liveEdit: true,
+    liveEdit: false,
     dir: 'content',
     markdown: {
       prism: {

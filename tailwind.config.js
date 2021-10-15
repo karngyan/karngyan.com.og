@@ -33,6 +33,9 @@ module.exports = {
               a: {
                 color: theme('colors.indigo.500'),
               },
+              code: {
+                color: theme('colors.gray.300')
+              },
               strong: {
                 color: theme('colors.gray.200'),
               },

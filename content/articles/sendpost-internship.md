@@ -30,7 +30,7 @@ description: Little did I know that this experience would be worth a thousand co
 <p><a href="https://sendx.io">SendX</a> is probably one of best profitable bootstrapped SaaS firm to work at in India. Hah! too many terms that I had no clue about at that point of time.</p>
 <p>Varun reached out to me on LinkedIn. </p>
 <div class="flex items-center justify-center">
-  <img class="rounded-md" src="/images/sendpost-internship/linkedinvarun.png" alt="linkedin varun" width="80%"/>
+  <img class="rounded-md" src="https://cdn.karngyan.com/images/sendpost-internship/linkedinvarun.png" alt="linkedin varun" width="80%"/>
 </div>
 <p>I gladly assumed he was busier than me, shared my digits and was expecting a call in the coming week. He called the same evening. We talked for an hour about my college life, work that I did at Amazon and Crio. I remember him explaining the engineering problems they had solved while developing SendX. And how a company of 8 people, and a tech team of 1.5 people had developed a successful bootstrapped company. Not kidding,  the things he said or may be the way he said them, urged an unusual desire in me to leave everything and work for him 24x7. Being a kickass CEO has it&#39;s perks I guess.</p>
 <p>SendX dominantly works on a Golang backend, and I had never coded a single line of Go. Varun gave me a small project that was supposed to be a filter round to measure my skills and see if I was worth a shot.</p>
@@ -41,7 +41,7 @@ description: Little did I know that this experience would be worth a thousand co
 <p>Obviously I had to name the project <strong>GetX</strong>. And I had to learn Go to implement the backend if I wanted to impress the guy. I was a bit familiar with React so quickly spun-up the UI. </p>
 <p>Here&#39;s the UI:</p>
 <div class="flex shadow-lg items-center justify-center">
-  <img class="rounded-md" src="/images/sendpost-internship/getx.png" alt="getx" width="80%"/>
+  <img class="rounded-md" src="https://cdn.karngyan.com/images/sendpost-internship/getx.png" alt="getx" width="80%"/>
 </div>
 
 <div class="breaker"></div>

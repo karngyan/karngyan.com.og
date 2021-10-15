@@ -227,14 +227,14 @@ Remarkably, we can achieve all this in **O(1)**\* time using a **hash function a
 				</p>
     </div>
     <div class="toright">
-        <img class="image rounded-lg" src="/images/hash-tables/ht1.png" alt="Empty Hash Table">
+        <img class="image rounded-lg" src="https://cdn.karngyan.com/images/hash-tables/ht1.png" alt="Empty Hash Table">
         <figcaption class="caption text-center">Empty Hash Table</figcaption>
     </div>
 </div>
 
 <div class="side-by-side">
     <div class="toleft">
-        <img class="image rounded-lg" src="/images/hash-tables/ht3.png" alt="Not Empty Hash Table">
+        <img class="image rounded-lg" src="https://cdn.karngyan.com/images/hash-tables/ht3.png" alt="Not Empty Hash Table">
         <figcaption class="caption text-center">After a few entries</figcaption>
     </div>
     <div class="toright">
@@ -391,7 +391,7 @@ Suppose we have a hash table that will store (name, age) key-value pairs and we 
 </table>
 
 
-![Separate Chaining Linked List Image](/images/hash-tables/separate-chaining.png)
+![Separate Chaining Linked List Image](https://cdn.karngyan.com/images/hash-tables/separate-chaining.png)
 <figcaption class="caption">Linked List Separate Chaining</figcaption>
 
 For lookups, suppose we need to find age of "Ryan", we hash the key "Ryan" to obtain the value (index) 1.
