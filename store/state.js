@@ -22,8 +22,8 @@ const state = {
   },
   resume: {
     enabled: true,
-    pdfUrl: '/RESUME_CV_GYAN_KARN.pdf',
-    pdfUrlDark: '/RESUME_CV_GYAN_KARN_DARK.pdf'
+    pdfUrl: 'https://cdn.karngyan.com/resume/resume_gyan_prakash_karn_jan_2021.pdf',
+    pdfUrlDark: 'https://cdn.karngyan.com/resume/resume_karn_dark_compressed.pdf'
   },
   uses: {
     enabled: true,
