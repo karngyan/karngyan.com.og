@@ -82,6 +82,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
+    script: [
+      { 'data-domain': 'karngyan.com', src: 'https://analytics.lookatx.dev/js/plausible.js', async: true, defer: true, }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
