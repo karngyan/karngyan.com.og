@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl px-4 mx-auto pt-2 border-l border-r border-dashed border-gray-700">
+  <div class="max-w-7xl px-4 mx-auto border-l border-r border-dashed border-gray-700">
     <div class="max-w-5xl mx-auto">
       <div class="relative h-48 border-t border-dashed border-gray-700 shadow-inner flex items-center justify-center">
         <Peaberry class="h-8" />
