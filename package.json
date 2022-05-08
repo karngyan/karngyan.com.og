@@ -17,9 +17,6 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/toast": "^3.3.1",
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "@tailwindcss/forms": "^0.3.2",
-    "@tailwindcss/typography": "^0.4.0",
     "aos": "^2.3.4",
     "core-js": "^3.9.1",
     "date-fns": "^2.22.1",
@@ -37,18 +34,23 @@
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
+    "@nuxt/postcss8": "^1.1.3",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/tailwindcss": "^4.0.3",
-    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.1",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.7",
     "concurrent-transform": "^1.0.0",
     "gulp": "^4.0.2",
     "gulp-awspublish": "^4.1.2",
     "gulp-awspublish-router": "^0.2.0",
     "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
-    "postcss": "^8.2.12",
+    "postcss": "^8.4.13",
     "sass": "^1.32.8",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "^3.0.24"
   },
   "resolutions": {
     "pdfjs-dist": "2.5.207"

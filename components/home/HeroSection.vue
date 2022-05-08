@@ -26,7 +26,7 @@
                 <div class="mt-5 w-full sm:mx-auto lg:ml-0">
                   <div class="flex flex-wrap items-start items-center justify-between">
                     <a href="https://sendpost.io" target="_blank" rel="noreferrer" class="flex items-center justify-center px-1">
-                      <SendPost class="h-8 rounded-sm sm:h-9" />
+                      <SendPost class="h-8 rounded-sm sm:h-10" />
                     </a>
                     <a href="https://amazon.in/" target="_blank" rel="noreferrer" class="flex items-center justify-center px-1">
                       <Amazon class="h-8 sm:h-9" />
@@ -122,6 +122,7 @@
 import SendPost from "~/components/logos/SendPost";
 import InterviewReady from "~/components/logos/InterviewReady";
 import CrioDo from "~/components/logos/CrioDo";
+
 export default {
   components: {CrioDo, InterviewReady, SendPost},
   data() {

@@ -83,14 +83,15 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
     script: [
-      { 'data-domain': 'karngyan.com', src: 'https://analytics.lookatx.dev/js/plausible.js', async: true, defer: true, }
+      // { 'data-domain': 'karngyan.com', src: 'https://analytics.lookatx.dev/js/plausible.js', async: true, defer: true, }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'aos/dist/aos.css',
-    'github-calendar/dist/github-calendar-responsive.css'
+    'github-calendar/dist/github-calendar-responsive.css',
+     '@/assets/css/tailwind.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -113,7 +114,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     '@nuxtjs/dotenv',
   ],
 
@@ -222,6 +223,12 @@ export default {
   build: {
     splitChunks: {
       layout: true
+    },
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
     },
   },
 

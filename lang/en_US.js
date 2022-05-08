@@ -14,7 +14,7 @@ const strings = {
     iBlogTech: 'i blog tech',
     haveALook: 'have a look',
     friendlyNeighborhood: 'your friendly neighborhood',
-    description: 'I am a Software Engineer and a part time freelancer. I blog tech, write a weekend newsletter called Software Shots, and tinker with side projects every now n then.',
+    description: 'I work as a Full Time Software Engineer at Customer.io. I blog tech, sometimes write a newsletter called Software Shots, and tinker with side projects every now n then.',
     words: ['developer', 'designer', 'engineer', 'programmer', 'encoder'],
     softwareShots: 'software shots'
   },
