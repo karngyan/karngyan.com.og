@@ -1,6 +1,6 @@
 const createSitemapRoutes = async () => {
   let routes = [];
-  const { $content } = require('@nuxt/content')
+  const {$content} = require('@nuxt/content')
   const articles = await $content('articles').fetch();
   for (const article of articles) {
     routes.push(`blog/${article.slug}`);
@@ -30,7 +30,7 @@ const create = async (feed) => {
     description: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.',
     link: `${hostname}/feed.xml`
   }
-  const { $content } = require('@nuxt/content')
+  const {$content} = require('@nuxt/content')
   const posts = await $content('articles').fetch();
   for (const post of posts) {
     const feedItem = await constructFeedItem(post, 'blog', hostname);
@@ -53,6 +53,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  server: {
+    host: '0.0.0.0'
+  },
+
   modern: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -62,25 +66,35 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.' },
-      { name: 'title', content: 'Gyan Prakash Karn | Friendly Neighborhood Developer'},
-      { name: 'author', content: 'Gyan Prakash Karn | mail@karngyan.com'},
-      { property: 'og:type', content: 'website'},
-      { property: 'og:url', content: 'https://karngyan.com'},
-      { property: 'og:title', content: 'Karn | Friendly Neighborhood Developer'},
-      { property: 'og:description', content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.'},
-      { property: 'og:image', content: 'https://cdn.karngyan.com/logo_dark.png'},
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.'
+      },
+      {name: 'title', content: 'Gyan Prakash Karn | Friendly Neighborhood Developer'},
+      {name: 'author', content: 'Gyan Prakash Karn | mail@karngyan.com'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:url', content: 'https://karngyan.com'},
+      {property: 'og:title', content: 'Karn | Friendly Neighborhood Developer'},
+      {
+        property: 'og:description',
+        content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.'
+      },
+      {property: 'og:image', content: 'https://cdn.karngyan.com/logo_dark.png'},
 
-      { property: 'twitter:card', content: 'https://cdn.karngyan.com/logo_dark.png'},
-      { property: 'twitter:url', content: 'https://karngyan.com'},
-      { property: 'twitter:title', content: 'Karn | Friendly Neighborhood Developer'},
-      { property: 'twitter:description', content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.'},
-      { property: 'twitter:image', content: 'https://cdn.karngyan.com/logo_dark.png'},
+      {property: 'twitter:card', content: 'https://cdn.karngyan.com/logo_dark.png'},
+      {property: 'twitter:url', content: 'https://karngyan.com'},
+      {property: 'twitter:title', content: 'Karn | Friendly Neighborhood Developer'},
+      {
+        property: 'twitter:description',
+        content: 'I blog tech, write a weekend newsletter called Software Shots and tinker with side projects every now n then.'
+      },
+      {property: 'twitter:image', content: 'https://cdn.karngyan.com/logo_dark.png'},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
     ],
     script: [
       // { 'data-domain': 'karngyan.com', src: 'https://analytics.lookatx.dev/js/plausible.js', async: true, defer: true, }
@@ -91,16 +105,16 @@ export default {
   css: [
     'aos/dist/aos.css',
     'github-calendar/dist/github-calendar-responsive.css',
-     '@/assets/css/tailwind.css',
+    '@/assets/css/tailwind.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/vuetyper.js', ssr: false},
-    { src: '~/plugins/directives.js', ssr: false},
-    { src: '~/plugins/aos.js', ssr: false},
-    { src: '~/plugins/vueGtag.js', ssr: false},
-    { src: '~/plugins/vueClapButton.js', ssr: false},
+    {src: '~/plugins/vuetyper.js', ssr: false},
+    {src: '~/plugins/directives.js', ssr: false},
+    {src: '~/plugins/aos.js', ssr: false},
+    {src: '~/plugins/vueGtag.js', ssr: false},
+    {src: '~/plugins/vueClapButton.js', ssr: false},
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -252,7 +266,7 @@ export default {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
         document.bodyPlainText = document.text;
-        const { text } = require('reading-time')(document.text)
+        const {text} = require('reading-time')(document.text)
         document.readingTime = text
       }
     }

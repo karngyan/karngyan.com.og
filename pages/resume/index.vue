@@ -13,7 +13,7 @@
 
       <div class="relative border-t border-gray-700 border-dashed">
         <div class="-mt-24 z-40 cursor-pointer hover: image-profile h-32 w-32 overflow-hidden rounded-full shadow-md border-4 border-gray-700">
-          <img src="https://cdn.karngyan.com/karn.jpg" alt="karn"/>
+          <img class="shrink-0" src="https://cdn.karngyan.com/karn.jpg" alt="karn"/>
         </div>
 
         <div class="grid grid-cols-3 gap-4">
@@ -24,7 +24,7 @@
           </div>
           <div class="hidden md:block">
             <div class="space-x-2 flex flex-row items-start">
-              <img src="../../assets/bitm.webp" alt="BIT Mesra" class="h-5 mt-0.5 mr-0.5"/>
+              <img src="../../assets/bitm.webp" alt="BIT Mesra" class="shrink-0 h-5 mt-0.5 mr-0.5"/>
               <a href="#education" class="text-md lowercase font-medium text-gray-200 hover:underline hover:text-gray-100">Birla Institute of Technology, Mesra</a>
             </div>
           </div>
@@ -146,8 +146,8 @@
         <div>
           <div class="pt-2 text-2xl font-semibold text-gray-200">education</div>
           <div class="mt-6 flex flex-row space-x-4">
-            <div class="h-10 w-10 flex items-center justify-center rounded-sm border-gray-700 border-dashed">
-              <img class="h-10 w-10" src="../../assets/bitm.webp" alt="BIT Mesra" />
+            <div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-sm border-gray-700 border-dashed">
+              <img class="h-10 w-10 shrink-0" src="../../assets/bitm.webp" alt="BIT Mesra" />
             </div>
             <div class="flex flex-col space-y-4">
               <div id="education" class="flex flex-col space-y-1">
@@ -182,8 +182,8 @@
         <div>
           <div class="pt-2 text-2xl font-semibold text-gray-200">licenses & certifications</div>
           <div class="mt-6 flex flex-row space-x-4">
-            <div class="h-10 w-10 flex items-center justify-center rounded-sm border-gray-700 border-dashed">
-              <img class="h-10 w-10" src="../../assets/icpc.png" alt="ICPC" />
+            <div class="shrink-0 h-10 w-10 flex items-center justify-center rounded-sm border-gray-700 border-dashed">
+              <img class="h-10 w-10 shrink-0" src="../../assets/icpc.png" alt="ICPC" />
             </div>
             <div class="flex flex-col space-y-4">
               <div id="education" class="flex flex-col space-y-1">
