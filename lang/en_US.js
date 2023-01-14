@@ -6,6 +6,7 @@ const strings = {
     projects: 'projects',
     uses: 'uses',
     resume: 'résumé',
+    meet: 'meet',
     buyMeACoffee: 'buy me a beer',
     signIn: 'sign in',
     signOut: 'sign out'
@@ -29,6 +30,10 @@ const strings = {
   blog: {
     header: 'blog',
     subtext: 'i try to write once in a while. let me know your thoughts in comments or mail@karngyan.com'
+  },
+  meet: {
+    header: 'meet',
+    subtext: 'if you can\'t find a slot, i\'m always an email away: mail [at] karngyan.com.'
   },
   recentBlog: {
     header: 'recent blogs',

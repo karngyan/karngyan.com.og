@@ -97,6 +97,7 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
     ],
     script: [
+      { src: 'https://embed.savvycal.com/v1/embed.js', async: true, defer: true }
       // { 'data-domain': 'karngyan.com', src: 'https://analytics.lookatx.dev/js/plausible.js', async: true, defer: true, }
     ]
   },

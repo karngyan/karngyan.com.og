@@ -20,6 +20,9 @@ const state = {
   blog: {
     enabled: true,
   },
+  meet: {
+    enabled: true,
+  },
   resume: {
     enabled: true,
     pdfUrl: 'https://cdn.karngyan.com/resume/resume_karn_jan_2023.pdf',
