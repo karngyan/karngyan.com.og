@@ -37,7 +37,7 @@
           </a>
         </div>
         <p class="mt-8 text-sm leading-6 text-gray-400 md:mt-0 md:order-1">
-          {{ `${$store.state.name} © 2017 - ${new Date().getFullYear()}` }} • template by <span class="ceator-preview hover:text-hot-pink text-gray-300">
+          {{ `${$store.state.name} © 2017 - ${new Date().getFullYear()}` }} • <nuxt-link :to="localePath('terms')">terms</nuxt-link> • <nuxt-link :to="localePath('privacy')">privacy</nuxt-link> • template by <span class="ceator-preview hover:text-hot-pink text-gray-300">
           <a class="hidden md:inline-block" rel="noreferrer" target="_blank" href="https://github.com/karngyan/karngyan.com">
           <creator-preview
             :avatar="avatar"

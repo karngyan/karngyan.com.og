@@ -50,7 +50,7 @@
     "postcss": "^8.4.13",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.2.7"
   },
   "resolutions": {
     "pdfjs-dist": "2.5.207"
